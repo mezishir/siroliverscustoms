@@ -1,7 +1,8 @@
-.logo {
-    width="200"
-    height="191"
+img {
+  width: 200px;
+  height: 191px;
 }
+
 
 .multi-repeating-linear {
     background: repeating-linear-gradient(
