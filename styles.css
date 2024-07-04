@@ -1,8 +1,65 @@
-img {
-  width: 200px;
-  height: 191px;
+/*list of fonts used on site*/
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*styling applied to logo, paragraphs and headers consistently used throughout site*/
+
+.logo {
+  width: 200px;
+  height: 191px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {  text-align: center; font-family: 'libre baskerville'; font-style: italic; font-size: 72px;}
+h5 {  text-align: center; font-size: 24px}
+h3 {  text-align: center; color: #FDC236; font-family: 'cinzel decorative'; font-weight: 700; font-size: 45px}
+p {text-align: center; color: #FBE1A4; font-family: 'raleway'}
+
+
+/*future custom background colors: multi repeating as header background, conical as presentation area background*/
 
 .multi-repeating-linear {
     background: repeating-linear-gradient(
