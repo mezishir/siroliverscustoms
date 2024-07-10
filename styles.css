@@ -53,21 +53,51 @@
   margin-right: auto;
 }
 
-h1 {  text-align: center; font-family: 'libre baskerville'; font-style: italic; font-size: 72px;}
+h1 {  text-align: center; font-family: 'libre baskerville'; font-style: italic; font-size: 72px; color:#d69c15}
 h5 {  text-align: center; font-size: 24px}
 h3 {  text-align: center; color: #fdc236; font-family: 'cinzel decorative'; font-weight: 700; font-size: 45px}
 p {text-align: center; color: #FBE1A4; font-family: 'raleway'}
 
-
-/*future custom background colors: multi repeating as header background, conical as presentation area background*/
+/*page formating*/
 
 .tophalf {
-  background: linear-gradient(70deg, black, 70%, gold)
+  background: linear-gradient(45deg, black, 75%, gold);
+  padding-bottom: 10px;
 }
 
 .bottomhalf {
-    background: conic-gradient( black 95%, black 10%, yellow 10%, gold);
+    background-color: black;
+  }
 
 body {
   background-color: black;
 }
+.header {
+  width: 1020px;
+  display: flexbox;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/*Navigation formating*/
+
+.navbar {
+  display: flexbox;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 1020px;
+}
+.nav-link {
+  display: inline-flex;
+  padding: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  justify-content: space-around;
+}
+
+
+/*Content on bottom half of site for each page*/
+
