@@ -1,5 +1,11 @@
 /*list of fonts used on site*/
 
+.rye-regular {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .libre-baskerville-regular {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
@@ -53,9 +59,9 @@
   margin-right: auto;
 }
 
-h1 {  text-align: center; font-family: 'libre baskerville'; font-style: italic; font-size: 72px; color:#d69c15}
-h5 {  text-align: center; font-size: 24px}
+h1 {  text-align: center; color:#d69c15; font-family: 'libre baskerville'; font-style: italic; font-size: 72px; }
 h3 {  text-align: center; color: #fdc236; font-family: 'cinzel decorative'; font-weight: 700; font-size: 45px}
+h5 {  text-align: center; color:#d69c15; font-family: 'rye'; font-size: 45px;  text-shadow: #FBE1A4 4px 4px 10px;}
 p {text-align: center; color: #FBE1A4; font-family: 'raleway'; font-size: 20px}
 
 /*page formating*/
@@ -68,10 +74,7 @@ p {text-align: center; color: #FBE1A4; font-family: 'raleway'; font-size: 20px}
 .header p{
 padding: 0px 20px;
 }
-.bottomhalf {
-    /* background-color: black; */
-    background-image: conic-gradient(at top, black 120deg, yellow 180deg, black 240deg);
-  }
+
 
 body {
   background-color: black;
@@ -176,3 +179,8 @@ body {
 
 /*Content on bottom half of site for each page*/
 
+.bottomhalf {
+    /* background-color: black; */
+    background-image: conic-gradient(at top, black 120deg, yellow 180deg, black 240deg);
+    margin-top: 10px;
+  }
