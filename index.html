@@ -10,32 +10,53 @@
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@400;700;900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 <body>
-  <div class="body">
-  <section class="tophalf">
-    <div class="header">
-    <img class="logo" src="images/siroliverslogo.jpg" alt="Sir Oliver's Custom Logo" >
-    <h1>Welcome to Sir Oliver's Customs</h1>
-    <p>This site is currently undergoing construction. Please excuse our dust as we work to perfect our site for you.</p>
-    <p>Sir Oliver is passionate about art and creating works of art based on others' ideas. The main focus at Sir Oliver's Customs is on tabletop miniatures for tabletop rpg games like Warhammer, Battletech, and DND, but custom orders are not limited to these items. At this time custom orders are currently closed as we work to get the shop in order. Please bear with us as we work to get the shop up and running properly. Please feel free to explore the site.</p>
-  </div>
-  </section>
-      <div class="navbar">
-          <div class="nav-link"><a  href="index.html">Home</a></div>
-          <div class="nav-link"><a  href="tbminis.html">Tabletop Miniatures</a></div>
-          <div class="nav-link"><a  href="tbterrain.html">Tabletop Terrain</a></div>
-          <div class="nav-link"><a  href="artwork.html">Artwork</a></div>
-          <div class="nav-link"><a  href="fxstglass.html">Faux Stained Glass</a></div>
-          <div class="nav-link"><a  href="quiltrepair.html">Quilt Repair</a></div>
-          <div class="nav-link"><a  href="customorders.html">Custom Orders</a></div>
+  <header >
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="tbminis.html">Tabletop Miniatures</a>
+        <a href="tbterrain.html">Tabletop Terrain</a>
+        <a href="artwork.html">Artwork</a>
+        <a href="fxstglass.html">Faux Stained Glass</a>
+        <a href="quiltrepair.html">Quilt Repair</a>
+        <a href="customorders.html">Custom Orders</a>
       </div>
     </div>
+  
+  </header>
+
+  <section class="tophalf">
+    <div class="header">
+      <img class="logo" src="images/siroliverslogo.jpg" alt="Sir Oliver's Custom Logo" >
+      <h1>Welcome to Sir Oliver's Customs</h1>
+      <p>This site is currently undergoing construction. Please excuse our dust as we work to perfect our site for you.</p>
+      <p>Sir Oliver is passionate about art and creating works of art based on others' ideas. The main focus at Sir Oliver's Customs is on tabletop miniatures for tabletop rpg games like Warhammer, Battletech, and DND, but custom orders are not limited to these items. At this time custom orders are currently closed as we work to get the shop in order. Please bear with us as we work to get the shop up and running properly. Please feel free to explore the site.</p>
+    </div>
+  </section>
+
+  <section>
+      <div class="navbar">
+          <div class="nav-link"><a href="index.html"><input type="button" class="navbarbtn" id="home" value="Home"/></a></div>
+          <div class="nav-link"><a href="tbminis.html"><input type="button" class="navbarbtn" id="minis" value="Tabletop Miniatures"/></a></div>
+          <div class="nav-link"><a href="tbterrain.html"><input type="button" class="navbarbtn" id="terrain" value="Tabletop Terrain"/></a></div>
+          <div class="nav-link"><a href="artwork.html"><input type="button" class="navbarbtn" id="art" value="Artwork"/></a></div>
+          <div class="nav-link"><a href="fxstglass.html"><input type="button" class="navbarbtn" id="glass" value="Faux Stained Glass"/></a></div>
+          <div class="nav-link"><a href="quiltrepair.html"><input type="button" class="navbarbtn" id="quilt" value="Quilt Repair"/></a></div>
+          <div class="nav-link"><a href="customorders.html"><input type="button" class="navbarbtn" id="orders" value="Custom Orders"/></a></div>
+      </div>
+  </section>
+
   <section class="bottomhalf">
     <div>
 
     </div>
   </section>
-</div>
-<p class="copyright">2024. Site created by <a href="https://github.com/mezishir">Amber Cruse</a>.
+
+<footer>
+<p class="copyright"> &#169; 2024. Site created by <a href="https://github.com/mezishir">Amber Cruse</a>.
 </p>
+</footer>
+<script src="./main.js" charset="UTF-8"></script>
 </body>
 </html>
