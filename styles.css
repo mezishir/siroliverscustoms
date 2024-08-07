@@ -1,3 +1,5 @@
+* {margin: 0px; padding: 0px;}
+
 /*list of fonts used on site*/
 
 .rye-regular {
@@ -49,6 +51,9 @@
   font-style: normal;
 }
 
+
+
+
 /*styling applied to logo, paragraphs and headers consistently used throughout site*/
 
 .logo {
@@ -57,14 +62,23 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
 }
 
-h1 {  text-align: center; color:#d69c15; font-family: 'libre baskerville'; font-style: italic; font-size: 72px; }
+h1 {  text-align: center; color:#d69c15; font-family: 'libre baskerville'; font-style: italic; font-size: 72px; -webkit-text-stroke-width: .02px; -webkit-text-stroke-color: black;}
 h3 {  text-align: center; color: #fdc236; font-family: 'cinzel decorative'; font-weight: 700; font-size: 45px}
-h5 {  text-align: center; color:#d69c15; font-family: 'rye'; font-size: 45px;  text-shadow: #FBE1A4 4px 4px 10px;}
-p {text-align: center; color: #FBE1A4; font-family: 'raleway'; font-size: 20px}
+h5 {  text-align: center; color:#d69c15; font-family: 'rye'; font-size: 45px;  text-shadow: #FBE1A4 4px 4px 10px; }
+p, ul {text-align: center; color: #f3d794; font-family: 'raleway'; font-size: 20px}
+
+
+
+
 
 /*page formating*/
+body {
+  background-color: black;
+}
+
 
 .tophalf {
   background: linear-gradient(45deg, black, 75%, gold);
@@ -74,18 +88,146 @@ p {text-align: center; color: #FBE1A4; font-family: 'raleway'; font-size: 20px}
 .header p{
 padding: 0px 20px;
 }
-
-
-body {
-  background-color: black;
-}
 .header {
   width: 1020px;
   display: flexbox;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.bottomhalf {
+  background-image: conic-gradient(at top, black 120deg, rgba(216, 183, 36, 0.849) 180deg, black 240deg);
+  padding-top: 20px;
+  display: flex;
+}
+.bcontent {
+  width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content p {
+  text-shadow: #000000 1px 5px 10px;
+  color:#f0deb4;
+  padding: 20px 20px;
+}
+.bcontent h5 {
+  display: block;
+}
+.ftop, .fcenter, .fbottom {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+
+/*minis grid formating*/
+
+.container {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+
+
+/* IMG formatting */
+
+.door1, .door3, .door6, .art1 {
+  height: 300px;
+}
+.door2, .door4, .door5 {
+  height: 150px;
+}
+.art1 {
+  float: left;
+  padding: 10px;
+}
+.qbefore {
+  height: 400px;
+  float: left;
+  padding: 30px;
+}
+.brown, .ethan, .logan {
+  height: 200px;
+  margin-bottom: 20px;
+}
+.basil {
+  width: 225px;
+  margin: 5px;
+  display: inline;
+}
+.ghas {
+  height: 250px;
+  margin: 5px;
+  display: inline;
+}
+.alex {
+  height: 200px;
+}
+.mort {
+  height: 300px;
   
 }
+.elem {
+  height: 300px;
+}
+.tera1, .tera2 {
+  height: 200px;
+}
+
+/* terrain formating */
+
+figcaption {
+  color: #f3d794;
+  text-align: center;
+  padding: 10px;
+}
+.fig2 {
+  width: 250px;
+  align-content: center;
+  justify-content: center;
+}
+.fig1 {
+  width: 160px;
+  align-content: center;
+  justify-content: center;
+}
+.figrid {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 20px;
+  row-gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.figp {
+  grid-column-start: 2;
+  grid-row: span 2;
+  padding: 10px
+}
+.terr1 {
+  grid-column-start: 1;
+  align-content: center;
+  justify-content: center;
+}
+.terr2 {
+  grid-row-start: 2;
+}
+
+
+
+
+
 
 /*Navigation formating*/
 
@@ -94,8 +236,8 @@ body {
   align-items: center;
   justify-content: center;
   background-color: black;
-
 }
+
 .nav-link {
   display: inline-flex;
   padding: 10px;
@@ -105,8 +247,8 @@ body {
   align-content: center;
   justify-content: center;
   border: 10px solid transparent;
-    border-image: url(./images/buttonborder2.png) 20%;
-    border-image-width: 20px;
+  border-image: url(./images/buttonborder2.png) 20%;
+  border-image-width: 20px;
 }
 
 .navbarbtn {
@@ -120,10 +262,18 @@ body {
 .dropdown {
   visibility: hidden;
 }
+
+
+
+
+
+
 /*Media Queries for Nav Bar and CSS styling adjustments*/
-@media (max-width: 1199px) {
+@media (max-width: 1115px) {
   .navbar{
     visibility: hidden;
+    height: 1px;
+    display:block
   }
   
   .dropdown {
@@ -161,12 +311,21 @@ body {
   
 }
 
+/* media queries for mobile */
+
 @media (max-width: 800px) {
-  h1 {
+  h1, h5{
     font-size: 40px;
   }
   p {
     font-size: 16px;
+  }
+  .bottomhalf p {
+    text-shadow: #000000 1px 5px 10px;
+    color:#f0deb4;
+  }
+  .bottomhalf {
+    background-image: conic-gradient(at top, black 120deg, rgba(185, 142, 22, 0.801) 180deg, black 240deg);
   }
   .logo {
     width: 150px;
@@ -175,12 +334,69 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .door1, .door3, .door6 {
+    height: 150px;
+    padding: 10px;
+  }
+  .door2 {
+    height: 100px;
+    padding: 10px;
+  }
+  .door4, .door5 {
+    height: 75px;
+    padding: 5px;
+  }
+  .door6 {
+    float: left;
+  }
+  .door1, .door2, .door3, .door4, .door5 {
+    float: right;
+  }
+  .ftop, .fcenter, .fbottom {
+    display: block;
+    align-content: center;
+    justify-content: center;
+  }
+  .qbefore {
+    height: 200px;
+  }
+  .brown, .ethan, .logan {
+    height: 150 px;
+    padding: 10px;
+  }
+  .container{
+    display: grid;
+  }
+  .basil {
+    width: 175px;
+    margin: 5px;
+    display: block;
+  }
+  .ghas {
+    height: 200px;
+    margin: 5px;
+    display: block;
+  }
+  .alex {
+    height: 150px;
+  }
+  .mort {
+    height: 200px;
+    
+  }
+  .elem {
+    height: 200px;
+  }
+  .figrid {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .tera1, .tera2 {
+    height: 175px;
+    margin: auto;
+  }
 }
 
-/*Content on bottom half of site for each page*/
 
-.bottomhalf {
-    /* background-color: black; */
-    background-image: conic-gradient(at top, black 120deg, yellow 180deg, black 240deg);
-    margin-top: 10px;
-  }
