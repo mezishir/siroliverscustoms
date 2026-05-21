@@ -1,61 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+      <head>
         <link rel="stylesheet" href="./styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <Title>Sir Oliver's Customs</Title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rye&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rye&display=swap" rel="stylesheet">
     </head>
-<body>
-  <header >
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Menu</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="index.html">Home</a>
-        <a href="tbminis.html">Tabletop Miniatures</a>
-        <a href="tbterrain.html">Tabletop Terrain</a>
-        <a href="artwork.html">Artwork</a>
-        <a href="fxstglass.html">Faux Stained Glass</a>
-        <a href="quiltrepair.html">Quilt Repair</a>
-        <a href="customorders.html">Custom Orders</a>
-      </div>
-    </div>
-  
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tbminis.html">Miniatures</a></li>
+        <li><a href="tbterrain.html">Terrain</a></li>
+        <li><a href="customorders.html">Custom Order Form</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </nav>
+  <header class="hero">
+    <img class="logo" src="images/siroliverslogo.jpg" alt="Sir Oliver's Custom Logo" >
+    <h1>Sir Oliver's Tabletop Miniatures</h1>
+    <p class="tagline">Custom-painted miniatures & terrain for your next adventure</p>
   </header>
 
-  <section class="tophalf">
-    <div class="header">
-      <img class="logo" src="images/siroliverslogo.jpg" alt="Sir Oliver's Custom Logo" >
-      <h1>Welcome to Sir Oliver's Customs</h1>
-      <p>This site is currently undergoing construction. Please excuse our dust as we work to perfect our site for you.</p>
-    </div>
-  </section>
-
-  <section>
-      <div class="navbar">
-          <div class="nav-link"><a href="index.html"><input type="button" class="navbarbtn" id="home" value="Home"/></a></div>
-          <div class="nav-link"><a href="tbminis.html"><input type="button" class="navbarbtn" id="minis" value="Tabletop Miniatures"/></a></div>
-          <div class="nav-link"><a href="tbterrain.html"><input type="button" class="navbarbtn" id="terrain" value="Tabletop Terrain"/></a></div>
-          <div class="nav-link"><a href="artwork.html"><input type="button" class="navbarbtn" id="art" value="Artwork"/></a></div>
-          <div class="nav-link"><a href="fxstglass.html"><input type="button" class="navbarbtn" id="glass" value="Faux Stained Glass"/></a></div>
-          <div class="nav-link"><a href="quiltrepair.html"><input type="button" class="navbarbtn" id="quilt" value="Quilt Repair"/></a></div>
-          <div class="nav-link"><a href="customorders.html"><input type="button" class="navbarbtn" id="orders" value="Custom Orders"/></a></div>
-      </div>
+  <main>
+    <section class="gallery-intro">
+      <h2>Showcase Gallery</h2>
+      <p>Explore my hand-painted miniatures and custom terrain, crafted for tabletop gaming enthusiasts.</p>
     </section>
-
-  <section class="bottomhalf">
-    <div class="bcontent">
+    <section class="gallery">
+      <!-- Example images, replace with your own -->
+      <img src="images/mini1.jpg" alt="Painted Miniature 1" class="mini-thumb">
+      <img src="images/mini2.jpg" alt="Painted Miniature 2" class="mini-thumb">
+      <img src="images/terrain1.jpg" alt="Custom Terrain 1" class="mini-thumb">
+    </section>
+    <section class="about">
       <h5>About</h5>
       <div class="content">
-      <p>Sir Oliver is passionate about art and creating works of art based on others' ideas. The main focus at Sir Oliver's Customs is on tabletop miniatures for tabletop rpg games like Warhammer, Battletech, and DND, but custom orders are not limited to these items.</p>      
-      <p>At this time custom orders are currently closed as we work to get the shop in order. Please bear with us as we work to get the shop up and running properly. Please feel free to explore the site.</p>
+        <p>You’ve mastered the rules and built your lore—now give your tabletop forces the presence they deserve. Sir Oliver’s Customs offers an all-in-one commission studio designed to take your unique ideas and turn them into physical reality.<br>
+        We don't just paint miniatures; we help create them. Whether you have a completely unique character design that needs to be brought to life from scratch, or a massive wargaming army sitting in a "pile of shame," we handle the entire creative pipeline. From initial custom design concepts to meticulous, high-quality hand-painting, we deliver striking, cohesive figures engineered to stand out on any battlefield or display shelf.<br>
+        Your lore isn't generic. Your miniatures shouldn't be either.</p>
+        <p>Commissions are open! <a href="contact.html">Contact me</a> to discuss your project and get a quote.</p>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
+
+  <!-- bottomhalf/about section replaced by above -->
 
 <footer>
 <p class="copyright"> &#169; 2024. Site created by <a href="https://github.com/mezishir">Amber Cruse</a>.
